@@ -1,0 +1,24 @@
+/*
+  Main SCSS File
+
+  Table of contents:
+
+  00) Imports
+  01) Variables
+  02) Mixins
+  03) Base layout
+  04) Components
+  05) Pages
+
+ */
+
+@import "/00_imports/main";
+@import "/01_variables/main";
+@import "/02_mixins/main";
+@import "/03_base/main";
+@import "/04_components/main";
+@import "/05_pages/main";
+
+body {
+    font-family: sans-serif;
+}
