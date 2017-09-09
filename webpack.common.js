@@ -8,7 +8,7 @@ const extractSass = new ExtractTextPlugin('main.css');
 
 module.exports = {
     entry: {
-        main: './src/js/index.js'
+        main: './src/js/index.js',
     },
 
     output: {
@@ -26,24 +26,32 @@ module.exports = {
                         options: {
                             plugins: [
                                 require('stylelint')(),
-                                require('autoprefixer')()
-                            ]
-                        }
+                                require('autoprefixer')(),
+                            ],
+                        },
                     }],
-                    fallback: 'style-loader'
-                })
+                    fallback: 'style-loader',
+                }),
             },
             {
                 test: /\.js/,
-                use: 'babel-loader'
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'babel-loader',
+                    },
+                    {
+                        loader: 'eslint-loader',
+                    },
+                ],
             },
-        ]
+        ],
     },
 
     plugins: [
         new CleanWebpackPlugin(['dist']),
         extractCss,
         extractSass,
-        new StylelintPlugin()
-    ]
+        new StylelintPlugin(),
+    ],
 };

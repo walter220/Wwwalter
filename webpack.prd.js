@@ -9,12 +9,12 @@ module.exports = merge(common, {
     plugins: [
         new UglifyJSPlugin({
             test: /\.js($&#124;\?)/i,
-            parallel: true
+            parallel: true,
         }),
         new webpack.DefinePlugin({
             'process.env': {
-                'NODE_ENV': JSON.stringify('production')
-            }
-        })
-    ]
+                'NODE_ENV': JSON.stringify('production'),
+            },
+        }),
+    ],
 });

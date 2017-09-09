@@ -4,12 +4,17 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
     output: {
-        publicPath: 'dist'
+        publicPath: 'dist',
     },
 
     devtool: 'inline-source-map',
 
     devServer: {
-        contentBase: path.resolve(__dirname)
-    }
+        contentBase: path.resolve(__dirname),
+
+        overlay: {
+            errors: true,
+            warnings: true,
+        },
+    },
 });

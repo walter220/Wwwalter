@@ -26,6 +26,7 @@ $(document).ready(() => {
 
     $btn.click(() => {
         let curVal = $box.text();
-        $box.text(curVal += " Added");
+        $box.text(curVal += ' Added');
     });
+
 });
