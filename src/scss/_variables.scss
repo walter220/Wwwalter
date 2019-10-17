@@ -1,0 +1,26 @@
+// === Bootstrap overrides === //
+$primary: #1abc9c;
+
+$container-max-widths: (
+    sm: 700px,
+    md: 800px,
+    lg: 800px,
+    xl: 800px,
+);
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 768px,
+    md: 991px,
+    lg: 1200px,
+    xl: 1600px,
+);
+
+// === Custom variables === //
+$color-clear: #fff;
+$color-dark: #000;
+
+$color-bg-primary: #283c86;
+$color-bg-secondary: #45a247;
+
+$padding-cards: 40px;

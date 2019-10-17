@@ -1,42 +1,36 @@
 {
-  "name": "wwwalter",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --progress --colors --config webpack.dev.js --watch --open",
-    "dev": "webpack-dev-server --progress --colors --config webpack.dev.js --open",
-    "prd": "webpack --progress --colors --config webpack.prd.js",
-    "build": "webpack --progress --colors --display detailed --config webpack.prd.js"
-  },
-  "author": "Walter Jansen",
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^4.0.0-beta",
-    "jquery": "^3.2.1",
-    "popper.js": "^1.12.5"
-  },
-  "devDependencies": {
-    "autoprefixer": "^7.1.4",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
-    "clean-webpack-plugin": "^0.1.16",
-    "css-loader": "^0.28.7",
-    "eslint": "^4.6.1",
-    "eslint-loader": "^1.9.0",
-    "extract-text-webpack-plugin": "^3.0.0",
-    "file-loader": "^0.11.2",
-    "node-sass": "^4.5.3",
-    "postcss-import": "^10.0.0",
-    "postcss-loader": "^2.0.6",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.18.2",
-    "stylelint": "^8.1.1",
-    "stylelint-webpack-plugin": "^0.9.0",
-    "uglifyjs-webpack-plugin": "^0.4.6",
-    "webpack": "^3.5.6",
-    "webpack-dev-server": "^2.7.1",
-    "webpack-merge": "^4.1.0"
-  }
+    "name": "pi-dashboard",
+    "author": "Walter Jansen",
+    "version": "0.1.0",
+    "private": true,
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test"
+    },
+    "dependencies": {
+        "bootstrap": "4.3.1",
+        "node-sass": "npm:sass@^1.22.12",
+        "react": "16.9.0",
+        "react-dom": "16.9.0",
+        "react-scripts": "3.1.2"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "resolutions": {
+        "node-sass": "npm:sass"
+    }
 }
